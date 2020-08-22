@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enming</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li>
+                <img src="enming.png" id="logo">
+            </li>
+            <li><button id="home" onclick="
+                document.getElementById('home_page').style.display = 'block';   
+                document.getElementById('intro_page').style.display = 'none'; 
+                document.getElementById('project_page').style.display = 'none';
+                document.getElementById('maker_page').style.display = 'none';
+            ">홈</button></li>
+            <li><button id="intro" onclick="
+                document.getElementById('home_page').style.display = 'none';   
+                document.getElementById('intro_page').style.display = 'block';
+                document.getElementById('project_page').style.display = 'none';
+                document.getElementById('maker_page').style.display = 'none';
+            ">소개</button></li>
+            <li><button id="project" onclick="
+                document.getElementById('home_page').style.display = 'none';   
+                document.getElementById('intro_page').style.display = 'none';
+                document.getElementById('project_page').style.display = 'block';
+                document.getElementById('maker_page').style.display = 'none';
+            ">프로젝트</button></li>
+            <li><button id="member" onclick="
+                document.getElementById('home_page').style.display = 'none';   
+                document.getElementById('intro_page').style.display = 'none';
+                document.getElementById('project_page').style.display = 'none';
+                document.getElementById('maker_page').style.display = 'block';
+            ">팀원</button></li>
+        </ul>
+    </div>
+
+    <div id="home_page">
+        <img src="main.svg" style="width: 100%;">
+    </div>
+
+    <div id="intro_page" style="display: none;">
+        <ul id="intro_" style="width: 100%; height: calc(100vh - 180px); padding: 0px;
+                               margin-top: calc(100vh / 10);">
+            <li style="text-align: center; background-color: rgb(213, 237, 162);
+                       width: 30%; height: 80%; font-size: 25px;">
+                Enming Games를 소개합니다!
+            </li>
+            <li style="background-color: rgb(192, 228, 116);
+                       width: 70%; height: 80%; font-size: 25px;">
+                저희 Enming Games는 10대들로 이루어진 아주 젊은 개발팀입니다.<br>
+                저희는 지금까지 저희가 게임을 하면서 느꼈던 불편한 점들,<br>
+                그리고 ‘이런 게임이 있었으면 좋겠다.’ 라고 생각했던 것들을 모두 모아<br>
+                그것들을 실제 게임으로 탄생시킵니다.<br>
+                그야말로 상상하던 게임을 실제로 만드는 거죠.<br>
+                여러분도 Enming Games의 팀원이 될 수 있어요!<br>
+                구글 플레이에 출시하는 게임을 직접 만드는 거죠!<br>
+                프로그램 언어를 다루지 못 한다고요? 뭐, 괜찮아요!<br>
+                저희 Enming Games는 엔트리 게임 개발도 하고 있으니까요!<br><br>
+                저희 Enming Games는 상상하던 게임을 직접 만드는 일을 합니다.<br><br>
+                여러분이 상상하던 게임이 현실이 되는 그날까지 Enming Games의 노력은 계속됩니다.
+            </li>
+        </ul>
+    </div>
+
+    <div id="project_page" style="display: none;">
+        <img src="project.svg" style="width: 100%;">
+    </div>
+
+    <div id="maker_page" style="display: none;">
+        <img src="maker.svg" style="width: 100%; margin-top: 5%">
+    </div>
+</body>
+</html>
