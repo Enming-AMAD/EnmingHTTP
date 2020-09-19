@@ -26,19 +26,6 @@ li {
     float: left;
 }
 
-#home_ {
-    margin-top: calc(100vh / 100 * 25);
-}
-
-#home_ li {
-    width: 33%;
-}
-
-#logo2 {
-    width: 100%;
-    padding-bottom: 50px;
-}
-
 button {
     font-size: 35px;
     margin-left: 15px;
