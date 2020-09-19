@@ -13,11 +13,37 @@
 
         .proj {
             width: 250px;
+            height: 250px;
 
             animation-duration: 1s;
             animation-name: slidein;
         }
 
+        .projEx {
+            width: 250px;
+            height: 160px;
+
+            background-color: #4b4b4b00;
+
+            animation-duration: 1s;
+            animation-name: slideinText;
+
+            text-align: center;
+            opacity: 0;
+        }
+        .projEx:hover {
+            background-color: #4b4b4ba1;
+            opacity: 1;
+        }
+
+        @keyframes slideinText {
+            0% {
+                margin-left: 100px;
+            }
+            100% {
+                margin-left: 0px;
+            }
+        }
         @keyframes slidein {
             0% {
                 opacity: 0;
@@ -47,7 +73,22 @@
     <table style = "width: 100%; height: calc(100vh - 80px);">
         <tr style = "height: 50%">
             <td>
-                <img class = "proj" src="../media/project/tileOfEntry.png">
+                <div style="text-align: center; position: relative; top: 120px">
+                    <img class="proj" src="../media/project/tileOfEntry.png">
+                </div>
+                <div class = "projEx" style = " 
+                position: relative; position:relative; top: -134px; left: 66px;
+                border-radius: 125px;
+                padding-top: 90px;
+                ">
+
+                <span style = "font-size: 35px; color: white; font-weight: bold;">Tile of Entry</span>
+                <br>
+                <a href="http://naver.me/5VumdA6g" style="
+                    text-decoration: none; color: white; font-size: 28px;
+                ">플레이</a>
+
+                </div>
             </td>
             <td>
                 <img class = "proj" src="../media/emptyProj.png">
