@@ -3,6 +3,33 @@
 <head>
     <title>Enming</title>
     <link rel="stylesheet" type="text/css" href="../style/index.css">
+    <style>
+        td {
+            width: 20%; text-align: center;
+
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .proj {
+            width: 250px;
+
+            animation-duration: 1s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            0% {
+                opacity: 0;
+                margin-left: 100px;
+            }
+            100% {
+                opacity: 1;
+                margin-left: 0px;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <div id="nav">
@@ -16,6 +43,42 @@
             <li><button id="member" onclick="location.href = '../member'">팀원</button></li>
         </ul>
     </div>
-    <img src="../media/main.svg" style="width: 100%;">
+    <div style = "background-color: #374a53;">
+    <table style = "width: 100%; height: calc(100vh - 80px);">
+        <tr style = "height: 50%">
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td >
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+        </tr><tr style = "height: 50%">
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+            <td>
+                <img class = "proj" src="../media/emptyProj.png">
+            </td>
+        </tr>
+    </table>
+    </div>
 </body>
 </html>
