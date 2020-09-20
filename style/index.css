@@ -4,7 +4,7 @@ body {
 }
 
 #logo {
-    height: 60px;
+    height: 50px;
     padding-right: 25px;
 }
 
@@ -24,6 +24,23 @@ ul {
 
 li {
     float: left;
+    margin-right: 150px;
+}
+
+#home{
+    color: black;
+}
+
+#intro{
+    color: gray;
+}
+
+#project{
+    color: gray;
+}
+
+#member{
+    color: gray;
 }
 
 button {
@@ -33,4 +50,22 @@ button {
     border: none;
     outline: none;
     background-color: white;
+}
+
+#page{
+    margin-top: 6.3cm;
+    display: flex;
+}
+
+.text-a{
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+.text-b{
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 40px;
 }
