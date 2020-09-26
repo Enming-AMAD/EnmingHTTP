@@ -1,71 +1,41 @@
 body {
     margin: 0px;
-    background-color: whitesmoke;
+    padding: 0px;
 }
 
-#logo {
-    height: 50px;
-    padding-right: 25px;
+.header {
+    width: 100%;
+    height: 80px;
+
+    box-shadow: 0px 30px 30px #888888;
 }
 
-ul {
-    margin: 0px;
-    padding-top: 15px;
-    list-style: none;
-    height: 100%;
-}
-
-#nav {
-    height: 70px;
-    background-color: white;
-    box-shadow: 0px 20px 20px gray;
-    padding-bottom: 10px;
-}
-
-li {
+.logo {
     float: left;
-    margin-right: 150px;
+    
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+
+    height: 50px;
+    width: 75.45px;
 }
 
-#home{
-    color: black;
+.title {
+    float: left;
+    font-size: 21px;
+    
+    margin-top: 9px;
+    margin-left: 22px;
 }
 
-#intro{
-    color: gray;
-}
+.nav {
+    margin-block-start: 11px;
 
-#project{
-    color: gray;
+    float: right;
+    font-size: 27px;
 }
-
-#member{
-    color: gray;
-}
-
-button {
-    font-size: 35px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border: none;
-    outline: none;
-    background-color: white;
-}
-
-#page{
-    margin-top: 6.3cm;
-    display: flex;
-}
-
-.text-a{
-    margin-left: 150px;
-    margin-right: 50px;
-    margin-top: 60px;
-    font-size: 40px;
-}
-
-.text-b{
-    margin-left: 50px;
-    margin-top: 60px;
-    font-size: 40px;
+.nav li {
+    margin-right: 24px;
+    float: right;
+    list-style: none;
 }
