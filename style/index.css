@@ -1,4 +1,15 @@
-body {
+@keyframes loading{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.loading{
+    opacity: 0;
+}
+
+.loading {animation:loading 0.5s 1s normal 1 ease forwards;}
+
+body{
     margin: 0px;
     padding: 0px;
 }
