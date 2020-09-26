@@ -46,7 +46,6 @@ footer {
     color: white;
     
     float: top;
-    margin-top: calc(100vh - 280px);
 
     background-color: #2f3136;
 }
@@ -70,4 +69,9 @@ footer {
 .footerLast {
     color: gray;
     padding-top: 40px;
+}
+
+.contents {
+    width: 100%;
+    height: calc(100vh - 80px);
 }
