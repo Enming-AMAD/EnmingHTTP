@@ -39,3 +39,35 @@ body {
     float: right;
     list-style: none;
 }
+
+footer {
+    width: 100%;
+    height: 200px;
+    color: white;
+    
+    float: top;
+    margin-top: calc(100vh - 280px);
+
+    background-color: #2f3136;
+}
+
+.footerContents {
+    padding-top: 60px;
+    height: 100%;
+}
+.footerContents ul li {
+    list-style: none;
+}
+.footerContents ul li ul {
+    padding-inline-start: 0px;
+}
+.footerContents ul li ul li{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.footerLast {
+    color: gray;
+    padding-top: 40px;
+}
