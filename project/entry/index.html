@@ -1,135 +1,150 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Enming</title>
-    <link rel="stylesheet" type="text/css" href="../../style/index.css">
-    <link rel="shortcut icon" href="../media/favicon.ico">
-    <link rel="icon" href="../media/favicon.ico">
+    <head>
+        <title>Enming</title>
+        <link rel="stylesheet" type="text/css" href="../../style/index.css">
+        <link rel="shortcut icon" href="../../media/favicon.ico">
+        <link rel="icon" href="../../media/favicon.ico">
+    </head>
     <style>
-        .body {
-            height: calc(75ex - 80px);
+        .project{
+            margin-left: 30px;
+            margin-top: 100px;
+            width: 210px;
+            border: 1px solid rgb(37, 37, 37);
         }
-
-        .proj {
-            float: left;
-            margin-right: 30px;
-
-            border: 2px solid;
-            border-radius: 12px;
-
-            height: 60ex;
-            width: 25em;
+        .project-img{
+            margin-top: .5em;
+            margin-left: .3em;
         }
-        .thumbnail {
-            width: 25em;
-        }
-        .name {
-            padding-top: 0.2em;
-            padding-left: 0.3em;
-            font-size: 2.5em;
-        }
-
-        .detail {
-            margin-top: 4.75ex;
-            margin-left: 0.25em;
-
-            height: 4ex;
-            width: 12em;
-            padding: 0px;
-
-            color: black;
+        .project-title{
+            width: 200px;
+            height: 50px;
             background-color: white;
-            font-size: 2em;
-
-            border: 2px solid;
+            margin-left: .3rem;
+            margin-right: .3rem;
         }
-        .detail:hover {
-            color: white;
-            background-color: darkgray;
+        .project-button{
+            font-size: 1.5rem;
+            margin-left: 1.7rem;
+            margin-bottom: 1rem;
         }
-
-        .div1 {
-            margin-top: 25ex;
-            margin-left: 19.5em;
+        .display{
+            display: flex;
         }
     </style>
-</head>
-
-<body>
-    <div class="header">
-        <div class="slogan">
-            <div class="logo">
-                <img class="logo" src="../../media/enmingLogo.png">
+    <body>
+        <div class="loading">
+            <div class="header">
+                <div class="slogan">
+                    <div class="logo">
+                        <img class="logo" src="../../media/enmingLogo.png">
+                    </div>
+                    <div class="title">
+                        Enming Games
+                        <br>엔밍 게임즈
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav">
+                        <li class="tabButton1" onclick="location.href='../project'">프로젝트</li>
+                        <li class="tabButton2" onclick="location.href='../intro'">소개</li>
+                        <li class="tabButton3" onclick="location.href='../main'">메인</li>
+                    </ul>
+                </div>
             </div>
-            <div class="title">
-                Enming Games
-                <br>엔밍 게임즈
-            </div>
-        </div>
-        <div class="nav">
-            <ul class="nav">
-                <li class="tabButton1" onclick="location.href='../../project'">프로젝트</li>
-                <li class="tabButton2" onclick="location.href='../../intro'">소개</li>
-                <li class="tabButton3" onclick="location.href='../../main'">메인</li>
-            </ul>
-        </div>
-    </div>
-    <div class="body">
-        <div class="div1">
-            <div class="proj">
-                <img class="thumbnail" src="../../media/project/empty.png">
-                <span class="name">작품 이름 1</span>
-                <div class="div2">
-                    <button class="detail">
+            <div class="display">
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
+                        자세히 보기
+                    </button>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
+                        자세히 보기
+                    </button>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
+                        자세히 보기
+                    </button>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
+                        자세히 보기
+                    </button>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
+                        자세히 보기
+                    </button>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="../../media/project/empty.png" width="200px">
+                    </div>
+                    <div class="project-title">
+                        NaN
+                    </div>
+                    <button class="project-button">
                         자세히 보기
                     </button>
                 </div>
             </div>
-            <div class="proj">
-                <img class="thumbnail" src="../../media/project/empty.png">
-                <span class="name">작품 이름 2</span>
-                <div class="div2">
-                    <button class="detail">
-                        자세히 보기
-                    </button>
-                </div>
-            </div>
-            <div class="proj">
-                <img class="thumbnail" src="../../media/project/empty.png">
-                <span class="name">작품 이름 3</span>
-                <div class="div2">
-                    <button class="detail">
-                        자세히 보기
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="slogan">
-            <div class="logo">
-                <img class="logo" src="../../media/enmingLogoFooter.png">
-            </div>
-            <div class="title">
-                Enming Games
-                <br>엔밍 게임즈
-            </div>
-            <div class="footerContents">
-                <ul>
-                    <li>Enming Games</li>
-                    <li>대표자: FURIOSA | EnmingDev@gmail.com</li>
-                    <li>
+            <footer>
+                <div class="slogan">
+                    <div class="logo">
+                        <img class="logo" src="../../media/enmingLogoFooter.png">
+                    </div>
+                    <div class="title">
+                        Enming Games
+                        <br>엔밍 게임즈
+                    </div>
+                    <div class="footerContents">
                         <ul>
-                            <li>이용약관</li>
-                            <li>개인정보처리방침</li>
+                            <li>Enming Games</li>
+                            <li>대표자: FURIOSA | EnmingDev@gmail.com</li>
+                            <li>
+                                <ul>
+                                    <li>이용약관</li>
+                                    <li>개인정보처리방침</li>
+                                </ul>
+                            </li>
+                            <li class="footerLast">© 2020 Enming Games. All Right Reserved.</li>
                         </ul>
-                    </li>
-                    <li class="footerLast">© 2020 Enming Games. All Right Reserved.</li>
-                </ul>
-            </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </footer>
-</body>
-
+    </body>
 </html>
