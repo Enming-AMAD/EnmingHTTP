@@ -22,7 +22,7 @@
             text-align: center;
             font-size: 3rem;
             margin-top: 0.3em;
-            margin-left: 1ex;
+            margin-left: 2ex;
         }
         .unity{
             display: flex;
@@ -31,11 +31,13 @@
             color: rgb(37, 37, 37);
             background-color:white;
             border-radius: 10px;
+            transition: 0.3s;
         }
         .unity:hover{
             border-color:white;
             color: white;
             background-color: rgb(37, 37, 37);
+            transition: 0.3s;
         }
         .unity:focus{
             outline: none;
@@ -48,11 +50,13 @@
             color: rgb(37, 37, 37);
             background-color: white;
             border-radius: 10px;
+            transition: 0.3s;
         }
         .entry:hover{
             border-color:white;
             color: white;
             background-color: rgb(37, 37, 37);
+            transition: 0.3s;
         }
         .entry:focus{
             outline: none;
@@ -81,14 +85,14 @@
             <div class="text">
                 구경할 작품의 종류를 선택해주세요!
             </div>
-            <div class="button">
+            <div class="button" onclick="location.href='../project/unity'">
                 <button class="unity">
                     <img src="../media/project/3-1-u.png" width="100px">
                     <div class="subetext">
                         유니티
                     </div>
                 </button>
-                <button class="entry">
+                <button class="entry" onclick="location.href='../project/entry'">
                     <img src="../media/project/3-1-e.png" width="80px">
                     <div class="subetext">
                         엔트리
