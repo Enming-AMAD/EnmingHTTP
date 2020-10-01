@@ -49,19 +49,16 @@ body{
 
 .tabButton1:hover{
     color: black;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
 .tabButton2:hover{
     color: black;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
 .tabButton3:hover{
     color: black;   
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
