@@ -16,7 +16,7 @@
         .button{
             margin-top: 1em;
             display: flex;
-            margin-left: 20%;
+            margin-left: calc(50vw - 430px);
         }
         .subetext{
             text-align: center;
@@ -61,6 +61,9 @@
         .entry:focus{
             outline: none;
         }
+        .body {
+            height: 28rem;
+        }
     </style>
     <body>
         <div class="loading">
@@ -82,22 +85,24 @@
                     </ul>
                 </div>
             </div>
-            <div class="text">
-                구경할 작품의 종류를 선택해주세요!
-            </div>
-            <div class="button" onclick="location.href='../project/unity'">
-                <button class="unity">
-                    <img src="../media/project/3-1-u.png" width="100px">
-                    <div class="subetext">
-                        유니티
-                    </div>
-                </button>
-                <button class="entry" onclick="location.href='../project/entry'">
-                    <img src="../media/project/3-1-e.png" width="80px">
-                    <div class="subetext">
-                        엔트리
-                    </div>
-                </button>
+            <div class="body">
+                <div class="text">
+                    구경할 작품의 종류를 선택해주세요!
+                </div>
+                <div class="button">
+                    <button class="unity" onclick="location.href='../project/unity'">
+                        <img src="../media/project/3-1-u.png" width="100px">
+                        <div class="subetext">
+                            유니티
+                        </div>
+                    </button>
+                    <button class="entry" onclick="location.href='../project/entry'">
+                        <img src="../media/project/3-1-e.png" width="80px">
+                        <div class="subetext">
+                            엔트리
+                        </div>
+                    </button>
+                </div>
             </div>
             <footer>
                 <div class="slogan">
