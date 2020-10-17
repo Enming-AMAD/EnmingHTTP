@@ -1,70 +1,164 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Error:404</title>
+        <title>EnmingㅣPage_Not_Found</title>
         <link rel="stylesheet" type="text/css" href="./style/index.css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="icon" href="favicon.ico">
     </head>
     <style>
-        .padding{
-            padding: 10px;
+        @keyframes shake{
+            0%{margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;}
+            10%{margin-top: 50px;
+            margin-left: 80px;
+            margin-right: 60px;}
+            20%{margin-top: -100px;
+            margin-left: -160px;
+            margin-right: -120px;}
+            30%{margin-top: 0px;
+            margin-left: 130px;
+            margin-right: 0px;}
+            40%{margin-top: 0px;
+            margin-left: -40px;
+            margin-right: 80px;}
+            50%{margin-top: -50px;
+            margin-left: 50px;
+            margin-right: 10px;}
+            60%{margin-top: -50px;
+            margin-left: 50px;
+            margin-right: -120px;}
+            70%{margin-top: 80px;
+            margin-left: 0px;
+            margin-right: 90px;}
+            80%{margin-top: -50px;
+            margin-left: 0px;
+            margin-right: 0px;}
+            90%{margin-top: 150px;
+            margin-left: 0px;
+            margin-right: 0px;}
+            100%{margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;}
         }
-        .text-1{
-            font-size: 5em;
+        .Text{
+            padding: 150px;
+            margin-left: 40px;
+        }
+        .Text-1{
+            margin-top: 30px;
+            width: 220px;
+            height: auto;
+            font-size: 8em;
             font-weight: 900;
+            background-image: linear-gradient(to right, #0AA4DB 0%,#1F5E9B 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
         }
-        .text-2{
-            margin-top: .5em;
-            font-size: 2em;
-            font-weight: 400;
+        .Text-2{
+            margin-top: 20px;
+            color: black;
+            font-size: 1.4em;
+            font-weight: 700;
         }
-        .text-3{
-            margin-top: 2em;
-            font-size: 1.3em;
+        .Text-3{
+            margin-top: 10px;
+            color: black;
+            font-size: 1.1em;
+            font-weight: 100;
         }
-        .home{
+        .imgeee {animation:shake 10s 0s normal infinite ease both;}
+        .imgeee{
             position: absolute;
+            top: 25%;
+            right: 13%;
+        }
+        .bu-tton{
+            border: 1px soild black;
+        }
+        .main{
             padding: 20px;
-            margin-top: 50px;
-            font-size: 2rem;
-            border-color: rgb(37, 37, 37);
+            margin-top: 10px;
+            border: 1px solid white;
             background-color: white;
             color: rgb(37, 37, 37);
-            border-radius: 30px;
+            font-size: 1.3em;
+            font-weight: 400;
+            border-radius: 10px;
             transition: 0.3s;
         }
-        .home:hover{
-            font-size: 2rem;
-            border-color: rgb(37, 37, 37);
-            background-color: rgb(37, 37, 37);
+        .main:hover{
+            border: 1px solid rgb(37, 37, 37);
+            background-color:rgb(37, 37, 37);
             color: white;
             transition: 0.3s;
         }
-        .home:focus{
+        .main:focus{
             outline: none;
         }
-        footer{
-            margin-top: 14.2em;
+        .intro{
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid white;
+            background-color: white;
+            color: rgb(37, 37, 37);
+            font-size: 1.3em;
+            font-weight: 400;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .intro:hover{
+            border: 1px solid rgb(37, 37, 37);
+            background-color:rgb(37, 37, 37);
+            color: white;
+            transition: 0.3s;
+        }
+        .intro:focus{
+            outline: none;
+        }
+        .project{
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid white;
+            background-color: white;
+            color: rgb(37, 37, 37);
+            font-size: 1.3em;
+            font-weight: 400;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .project:hover{
+            border: 1px solid rgb(37, 37, 37);
+            background-color:rgb(37, 37, 37);
+            color: white;
+            transition: 0.3s;
+        }
+        .project:focus{
+            outline: none;
         }
     </style>
     <body>
-        <div class="loading">
-            <div class="padding">
-                <div class="text-1">
-                    Error: 404
-                </div>
-                <div class="text-2">
-                    해당 페이지를 찾을 수 없어요!
-                </div>
-                <div class="text-3">
-                    오! 이런!! 길을 잃으셨군요!!! 걱정마세요! 저희가 도와드릴께요!!!
-                </div>
-                <a href="http://enming.kro.kr/main/">
-                    <button class="home">
-                        메인페이지로 돌아가기
-                    </button>
-                </a>
+        <div class="Text">
+            <div class="Text-1">
+                404
+            </div>
+            <div class="Text-2">
+                어? 왜 이런곳에계신가요?? 혹시... 길을 잃으셨나요???
+            </div>
+            <div class="Text-3">
+                오! 이런!! 이곳에 오면 안될텐데...<br>
+                저희가 빠져나갈 수 있도록 도와드릴께요!<br>
+                아래의 링크를 이용해보시겠어요? 빠져나갈 수 있도록 도와줄꺼에요!<br>
+                그럼 Enming_Website 에서 즐거운 시간 되세요!
+            </div>  
+            <div class="imgeee">
+                <img src="./media/Serch.png" width="400px">
+            </div>
+            <div class="bu-tton">
+                <button class="main" onclick="location.href='./main'">메인</button>
+                <button class="intro" onclick="location.href='./intro'">소개</button>
+                <button class="project" onclick="location.href='./project'">프로젝트</button>
             </div>
         </div>
     </body>
