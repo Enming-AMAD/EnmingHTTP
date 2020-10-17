@@ -77,7 +77,7 @@
         .bu-tton{
             border: 1px soild black;
         }
-        .main{
+        .bu_tton{
             padding: 20px;
             margin-top: 10px;
             border: 1px solid white;
@@ -88,53 +88,13 @@
             border-radius: 10px;
             transition: 0.3s;
         }
-        .main:hover{
+        .bu_tton:hover{
             border: 1px solid rgb(37, 37, 37);
             background-color:rgb(37, 37, 37);
             color: white;
             transition: 0.3s;
         }
-        .main:focus{
-            outline: none;
-        }
-        .intro{
-            padding: 20px;
-            margin-top: 10px;
-            border: 1px solid white;
-            background-color: white;
-            color: rgb(37, 37, 37);
-            font-size: 1.3em;
-            font-weight: 400;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-        .intro:hover{
-            border: 1px solid rgb(37, 37, 37);
-            background-color:rgb(37, 37, 37);
-            color: white;
-            transition: 0.3s;
-        }
-        .intro:focus{
-            outline: none;
-        }
-        .project{
-            padding: 20px;
-            margin-top: 10px;
-            border: 1px solid white;
-            background-color: white;
-            color: rgb(37, 37, 37);
-            font-size: 1.3em;
-            font-weight: 400;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-        .project:hover{
-            border: 1px solid rgb(37, 37, 37);
-            background-color:rgb(37, 37, 37);
-            color: white;
-            transition: 0.3s;
-        }
-        .project:focus{
+        .bu_tton:focus{
             outline: none;
         }
     </style>
@@ -156,9 +116,15 @@
                 <img src="https://data.ac-illust.com/data/thumbnails/d6/d6d945a8a9f0e7da3ab30520dc820ee7_t.jpeg" width="400px">
             </div>
             <div class="bu-tton">
-                <button class="main" onclick="location.href='./main'">메인</button>
-                <button class="intro" onclick="location.href='./intro'">소개</button>
-                <button class="project" onclick="location.href='./project'">프로젝트</button>
+                <a href="http://enming.kro.kr/main" style="text-decoration: none;">
+                    <button class="bu_tton">메인</button>
+                </a>
+                <a href="http://enming.kro.kr/intro" style="text-decoration: none;">
+                    <button class="bu_tton">소개</button>
+                </a>
+                <a href="http://enming.kro.kr/project" style="text-decoration: none;">
+                    <button class="bu_tton">프로젝트</button>
+                </a>
             </div>
         </div>
     </body>
