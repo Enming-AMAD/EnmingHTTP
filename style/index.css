@@ -7,7 +7,7 @@
     opacity: 0;
 }
 
-.loading {animation:loading 0.5s 1s normal 1 ease forwards;}
+.loading {animation:loading 1s 1s normal 1 ease forwards;}
 
 body{
     font-family: 'Nanum Gothic', sans-serif;
