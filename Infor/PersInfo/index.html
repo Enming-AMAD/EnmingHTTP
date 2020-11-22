@@ -29,7 +29,7 @@
             <div class="header">
                 <div class="slogan">
                     <div class="logo">
-                        <img class="logo" src="../../media/enmingLogo.png">
+                        <img class = "logo" src = "../../media/enming-no-background[main].svg" height="70px">
                     </div>
                     <div class="title">
                         Enming Games
@@ -149,7 +149,7 @@
             <footer>
                 <div class="slogan">
                     <div class="logo">
-                        <img class="logo" src="../../media/enmingLogoFooter.png">
+                        <img class = "logo" src="../../media/enmingLogoFooter.svg" height="70px">
                     </div>
                     <div class="title">
                         Enming Games
@@ -170,6 +170,21 @@
                     </div>
                 </div>
             </footer>
+            <div class="theme-button">
+                <button class="theme" onclick="darkMode()" id="button">🌙다크모드</button>
+            </div>
         </div>
+        <script>
+            function darkMode() {
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+                var button = document.getElementById("button");
+                if(button.innerHTML == "🌙다크모드") {
+                    button.innerHTML = "🌞라이트모드";
+                } else {
+                    button.innerHTML = "🌙다크모드";
+                }
+            }
+        </script>
     </body>
 </html>

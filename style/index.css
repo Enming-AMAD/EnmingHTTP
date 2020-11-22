@@ -3,6 +3,11 @@
     to {opacity: 1;}
 }
 
+.dark-mode{
+    background-color: #2f3136;
+    color: white;
+}
+
 .loading{
     opacity: 0;
 }
@@ -13,6 +18,9 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
     margin: 0%;
     padding: 0%;
+    background-color: white;
+    color: black;
+
 }
 
 .header {
@@ -20,18 +28,14 @@ body{
     width: 100%;
     height: 80px;
 
-    box-shadow: 0px 10px 10px #888888;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
 }
 
 .logo {
-    font-family: 'Nanum Gothic', sans-serif;
     float: left;
-    
-    margin-top: 7.5px;
+
     margin-left: 7.5px;
 
-    height: 50px;
-    width: 75.45px;
 }
 
 .title {
@@ -46,28 +50,30 @@ body{
 .nav {
     font-family: 'Nanum Gothic', sans-serif;
     transition: 0.3s;
-    color: gray;
     margin-block-start: 11px;
     float: right;
     font-size: 27px;
 }
 
 .tabButton1:hover{
-    font-family: 'Nanum Gothic', sans-serif;
-    color: black;
-    transition: 0.3s;
+    margin-top: -2px;
+    height: 40px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.1s;
 }
 
 .tabButton2:hover{
-    font-family: 'Nanum Gothic', sans-serif;
-    color: black;
-    transition: 0.3s;
+    margin-top: -2px;
+    height: 40px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.1s;
 }
 
 .tabButton3:hover{
-    font-family: 'Nanum Gothic', sans-serif;
-    color: black;   
-    transition: 0.3s;
+    margin-top: -2px;
+    height: 40px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.1s;
 }
 
 .tabButton4{
@@ -75,14 +81,14 @@ body{
     margin-right: 24px;
     float: right;
     list-style: none;
-    transition: 0.3s;
-    color: gray;
+    transition: 0.1s;
 }    
 
 .tabButton4:hover{
-    font-family: 'Nanum Gothic', sans-serif;
-    color: black;   
-    transition: 0.3s;
+    margin-top: -2px;
+    height: 40px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.1s;
 }
 
 .nav li {
@@ -102,6 +108,7 @@ footer {
     float: top;
 
     background-color: #2f3136;
+    box-shadow: 0px -4px 10px rgba(0,0,0,0.5);
 }
 
 .footerContents {
@@ -147,6 +154,8 @@ footer {
     height: 300px;
     background: #f5f5f5;
     border: 1px soild #eee;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -202,4 +211,23 @@ footer {
     transform: translate(-50%, -50%);
     font-size: 2em;
     text-align: center;
+    color: black;
+}
+
+.theme{
+    position: fixed;
+    top: 96%;
+    left: 97%;
+    width: 120px;
+    padding: 10px;
+    transform: translate(-100%, -100%);
+    border: 1px solid rgba(0,0,0,0.2);
+    background: none;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.theme:focus{
+    outline: none;
 }
