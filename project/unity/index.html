@@ -1,49 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EnmingㅣUnity[유니티]</title>
+        <title>Enmingㅣ프로젝트-유니티</title>
         <link rel="stylesheet" type="text/css" href="../../style/index.css">
         <link rel="shortcut icon" href="../../media/favicon.ico">
         <link rel="icon" href="../../media/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
     </head>
     <style>
-        .project{
-            margin-left: 30px;   
-            margin-top: 100px;
-            width: 210px;
-            border: 1px solid rgb(37, 37, 37);
-            border-radius: 8px;
-        }
-        .project-img{
-            width: 210px;
-        }
-        .project-title{
-            width: 180px;
-            height: 50px;
-            background-color: white;
-            margin-left: .6rem;
-            font-size: 1.3rem;
-        }
-        .project-button{
-            font-family: 'Nanum Gothic', sans-serif;
-            font-size: 1.5rem;
-            margin-left: 2.1rem;
-            margin-bottom: 1rem;
-            border: 1px solid rgb(37, 37, 37);
-            border-radius: 10px;
-            background-color: white;
-            transition: 0.3s;
-        }
-        .project-button:hover{
-            background-color: rgb(37, 37, 37);
-            color: white;
-            transition: 0.3s;
+        .project{width:250px;height: 400px;border: 1px solid black;border-radius: 10px;margin-left: 40px;margin-top: 100px;}
+
+        .imge{width: 250px;height: 175px;}
+        
+        .text1{font-size:1.4em}
+        .text2{font-size: 1.2em;margin-top: 10px;}
+        .text-2{font-size: 1em;margin-top: 3px;}
+        .text3{font-size: 1.2em;margin-top: 10px;}
+        .text-3{font-size: 1em;margin-top: 3px;margin-bottom: 10px;}
+        .text0{font-size: 1.1em;}
+
+        .game{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         .display{
             display: flex;
             overflow: scroll;
             width: 100vw;
+            height: 700px;
+            margin-top: 5%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .div0-2{
+            margin-left: 50%;
+            transform: translate(-50%, 0%);
+            display: flex;
+        }
+        .div2{
+            margin-left: 10px;
+            margin-top: 45%;
+            transform: translate(0%, -50%);
+            color: black;
+        }
+        .h1{
+            font-size: 1.5em;
+        }
+        .h-1{
+            margin-top: 3px;
+            font-size: 1em;
+        }
+        .h2{
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .h-2{
+            margin-top: 3px;
+            font-size: 1em;
+        }
+        .h3{
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .h-3{
+            margin-top: 3px;
+            font-size: 1em;
+        }
+        .h4{
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .h-4{
+            margin-top: 3px;
+            font-size: 1em;
+        }
+        .h5{
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .h-5{
+            margin-top: 3px;
+            font-size: 1em;
+        }
+        .img{
+            margin-top: 50%;
+        }
+        .label-all{
+            margin-top: 10px;
+            font-size: 1.3em;
+        }
+        .game input:checked + div{
+            display: block;
+        }
+        .game input + div{
+            display: none;
+        }
+        .game input{display: none;}
+        .div0{
+            background-color: #ececec;
+            width: 1000px;
+            height: 500px;
+            border-radius: 30px;
+        }
+        .empty{
+            margin-top:40%;
         }
     </style>
     <body>
@@ -51,7 +115,7 @@
             <div class="header">
                 <div class="slogan">
                     <div class="logo">
-                        <img class="logo" src="../../media/enmingLogo.png">
+                        <img class = "logo" src = "../../media/enming-no-background[main].svg" height="70px">
                     </div>
                     <div class="title">
                         Enming Games
@@ -68,90 +132,242 @@
                 </div>
             </div>
             <div class="display">
+            <!--game1-->
                 <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
+                    <div class="imge">
+                        <img class="imge" src="../../media/project/empty.png">
                     </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
+                    <div class="text1">게임 이름</div>
+                    <div class="text2">장르</div>
+                    <div class="text-2">게임장르</div>
+                    <div class="text3">소개</div>
+                    <div class="text-3">게임소개</div>
+                    <label class="text0" for="game1">자세히보기</label>
                 </div>
+                <div class="game">
+                    <input type="checkbox" id="game1">
+                    <div class="div0">
+                        <div class="div0-2">
+                            <div class="div1">
+                                <div class="img">
+                                    <img src="../../media/project/empty.png">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="h1">게임 이름</div>
+                                <div class="h2">장르</div>
+                                <div class="h-2">게임 장르</div>
+                                <div class="h3">소개</div>
+                                <div class="h-3">게임 소개</div>
+                                <div class="h4">플레이 타임</div>
+                                <div class="h-4">플레이 타임</div>
+                                <div class="h5">개발</div>
+                                <div class="h-5">개발자</div>
+                                <div class="label-all">
+                                    <a herf="https://enming.kro.kr">
+                                        <label>플레이 - Play</label>
+                                    </a>
+                                    <div class="label-in">
+                                        <label for="game1">돌아가기 - Back</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--game2-->
                 <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
+                    <div class="imge">
+                        <img class="imge" src="../../media/project/empty.png">
                     </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
+                    <div class="text1">게임 이름</div>
+                    <div class="text2">장르</div>
+                    <div class="text-2">게임장르</div>
+                    <div class="text3">소개</div>
+                    <div class="text-3">게임소개</div>
+                    <label class="text0" for="game2">자세히보기</label>
                 </div>
+                <div class="game">
+                    <input type="checkbox" id="game2">
+                    <div class="div0">
+                        <div class="div0-2">
+                            <div class="div1">
+                                <div class="img">
+                                    <img src="../../media/project/empty.png">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="h1">게임 이름</div>
+                                <div class="h2">장르</div>
+                                <div class="h-2">게임 장르</div>
+                                <div class="h3">소개</div>
+                                <div class="h-3">게임 소개</div>
+                                <div class="h4">플레이 타임</div>
+                                <div class="h-4">플레이 타임</div>
+                                <div class="h5">개발</div>
+                                <div class="h-5">개발자</div>
+                                <div class="label-all">
+                                    <a herf="https://enming.kro.kr">
+                                        <label>플레이 - Play</label>
+                                    </a>
+                                    <div class="label-in">
+                                        <label for="game2">돌아가기 - Back</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--game3-->
                 <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
+                    <div class="imge">
+                        <img class="imge" src="../../media/project/empty.png">
                     </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
+                    <div class="text1">게임 이름</div>
+                    <div class="text2">장르</div>
+                    <div class="text-2">게임장르</div>
+                    <div class="text3">소개</div>
+                    <div class="text-3">게임소개</div>
+                    <label class="text0" for="game3">자세히보기</label>
                 </div>
+                <div class="game">
+                    <input type="checkbox" id="game3">
+                    <div class="div0">
+                        <div class="div0-2">
+                            <div class="div1">
+                                <div class="img">
+                                    <img src="../../media/project/empty.png">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="h1">게임 이름</div>
+                                <div class="h2">장르</div>
+                                <div class="h-2">게임 장르</div>
+                                <div class="h3">소개</div>
+                                <div class="h-3">게임 소개</div>
+                                <div class="h4">플레이 타임</div>
+                                <div class="h-4">플레이 타임</div>
+                                <div class="h5">개발</div>
+                                <div class="h-5">개발자</div>
+                                <div class="label-all">
+                                    <a herf="https://enming.kro.kr">
+                                        <label>플레이 - Play</label>
+                                    </a>
+                                    <div class="label-in">
+                                        <label for="game3">돌아가기 - Back</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--game4-->
                 <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
+                    <div class="imge">
+                        <img class="imge" src="../../media/project/empty.png">
                     </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
+                    <div class="text1">게임 이름</div>
+                    <div class="text2">장르</div>
+                    <div class="text-2">게임장르</div>
+                    <div class="text3">소개</div>
+                    <div class="text-3">게임소개</div>
+                    <label class="text0" for="game4">자세히보기</label>
                 </div>
+                <div class="game">
+                    <input type="checkbox" id="game4">
+                    <div class="div0">
+                        <div class="div0-2">
+                            <div class="div1">
+                                <div class="img">
+                                    <img src="../../media/project/empty.png">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="h1">게임 이름</div>
+                                <div class="h2">장르</div>
+                                <div class="h-2">게임 장르</div>
+                                <div class="h3">소개</div>
+                                <div class="h-3">게임 소개</div>
+                                <div class="h4">플레이 타임</div>
+                                <div class="h-4">플레이 타임</div>
+                                <div class="h5">개발</div>
+                                <div class="h-5">개발자</div>
+                                <div class="label-all">
+                                    <a herf="https://enming.kro.kr">
+                                        <label>플레이 - Play</label>
+                                    </a>
+                                    <div class="label-in">
+                                        <label for="game4">돌아가기 - Back</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--game5-->
                 <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
+                    <div class="imge">
+                        <img class="imge" src="../../media/project/empty.png">
                     </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
+                    <div class="text1">게임 이름</div>
+                    <div class="text2">장르</div>
+                    <div class="text-2">게임장르</div>
+                    <div class="text3">소개</div>
+                    <div class="text-3">게임소개</div>
+                    <label class="text0" for="game5">자세히보기</label>
                 </div>
-                <div class="project">
-                    <div class="project-img">
-                        <img src="../../media/project/empty.png" width="210px">
-                    </div>
-                    <div class="project-title">
-                        NaN
-                    </div>
-                    <button class="project-button">
-                        자세히 보기
-                    </button>
-                </div>
-                <div class="team">
-                    <input type="checkbox" id="select">
-                    <label for="select"></label>
-                    <div class="content">
-                        <div class="T">Enming 서버에 들어오시겠어요??</div>
-                        <label for="select">생각해 볼께요!</label>
-                        <div class="content">
-                            <a href="https://discord.gg//HqQrkaW">
-                                <label>들어가 볼래요!</label>
-                            </a>
+                <div class="game">
+                    <input type="checkbox" id="game5">
+                    <div class="div0">
+                        <div class="div0-2">
+                            <div class="div1">
+                                <div class="img">
+                                    <img src="../../media/project/empty.png">
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="h1">게임 이름</div>
+                                <div class="h2">장르</div>
+                                <div class="h-2">게임 장르</div>
+                                <div class="h3">소개</div>
+                                <div class="h-3">게임 소개</div>
+                                <div class="h4">플레이 타임</div>
+                                <div class="h-4">플레이 타임</div>
+                                <div class="h5">개발</div>
+                                <div class="h-5">개발자</div>
+                                <div class="label-all">
+                                    <a herf="https://enming.kro.kr">
+                                        <label>플레이 - Play</label>
+                                    </a>
+                                    <div class="label-in">
+                                        <label for="game5">돌아가기 - Back</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="team">
+                <input type="checkbox" id="select">
+                <label for="select"></label>
+                <div class="content">
+                    <div class="T">Enming 서버에 들어오시겠어요??</div>
+                    <label for="select">생각해 볼께요!</label>
+                    <div class="content">
+                        <a href="https://discord.gg//HqQrkaW">
+                            <label>들어가 볼래요!</label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="empty">
+                .
+            </div>
             <footer>
                 <div class="slogan">
                     <div class="logo">
-                        <img class="logo" src="../../media/enmingLogoFooter.png">
+                        <img class = "logo" src="../../media/enmingLogoFooter.svg" height="70px">
                     </div>
                     <div class="title">
                         Enming Games
@@ -172,6 +388,21 @@
                     </div>
                 </div>
             </footer>
+            <div class="theme-button">
+                <button class="theme" onclick="darkMode()" id="button">🌙다크모드</button>
+            </div>
         </div>
+        <script>
+            function darkMode() {
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+                var button = document.getElementById("button");
+                if(button.innerHTML == "🌙다크모드") {
+                    button.innerHTML = "🌞라이트모드";
+                } else {
+                    button.innerHTML = "🌙다크모드";
+                }
+            }
+        </script>
     </body>
 </html>

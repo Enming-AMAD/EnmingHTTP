@@ -3,6 +3,10 @@
     to {opacity: 1;}
 }
 
+.empty{
+    color: rgba(0,0,0,0);
+}
+
 .dark-mode{
     background-color: #2f3136;
     color: white;
