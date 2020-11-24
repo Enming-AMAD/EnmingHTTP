@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EnmingㅣTest</title>
+        <title>Enmingㅣ</title>
         <link rel="stylesheet" type="text/css" href="../style/index.css">
         <link rel="shortcut icon" href="../media/favicon.ico">
         <link rel="icon" href="../media/favicon.ico">
@@ -11,34 +11,49 @@
     </style>
     <body>
         <div class="loading">
-            <div class="header">
-                <div class="slogan">
-                    <div class="logo">
-                        <img class="logo" src="../media/enmingLogo.png">
+            <div class = "header">
+                <div class = "slogan">
+                    <div class = "logo">
+                        <img class = "logo" src = "../media/enming-no-background[main].svg" height="70px">
                     </div>
-                    <div class="title">
+                    <div class = "title">
                         Enming Games
                         <br>엔밍 게임즈
                     </div>
                 </div>
-                <div class="nav">
-                    <ul class="nav">
-                        <li class="tabButton1" onclick="location.href='../project'">프로젝트</li>
-                        <li class="tabButton2" onclick="location.href='../intro'">소개</li>
-                        <li class="tabButton3" onclick="location.href='../main'">메인</li>
+                <div class = "nav">
+                    <ul class = "nav">
+                        <li class = "tabButton1" onclick="location.href='../project'">프로젝트</li>
+                        <li class = "tabButton2" onclick="location.href='../intro'">소개</li>
+                        <li class = "tabButton3" onclick="location.href='../main'">메인</li>
+                        <li class = "tabButton4" onclick="location.href='../link'">웹사이트</li>
+                        <label for="select" class="tabButton5">엔밍과 함께하기</label>
                     </ul>
                 </div>
             </div>
-            <footer>
-                <div class="slogan">
-                    <div class="logo">
-                        <img class="logo" src="../media/enmingLogoFooter.png">
+            <div class="team">
+                <input type="checkbox" id="select">
+                <label for="select"></label>
+                <div class="content">
+                    <div class="T">Enming 서버에 들어오시겠어요??</div>
+                    <label for="select">생각해 볼께요!</label>
+                    <div class="content">
+                        <a href="https://discord.gg//HqQrkaW">
+                            <label>들어가 볼래요!</label>
+                        </a>
                     </div>
-                    <div class="title">
+                 </div>
+            </div>
+            <footer>
+                <div class = "slogan">
+                    <div class = "logo">
+                        <img class = "logo" src="../media/enmingLogoFooter.svg" height="70px">
+                    </div>
+                    <div class = "title">
                         Enming Games
                         <br>엔밍 게임즈
                     </div>
-                    <div class="footerContents">
+                    <div class = "footerContents">
                         <ul>
                             <li>Enming Games</li>
                             <li>대표자: FURIOSA | EnmingDev@gmail.com</li>
@@ -48,11 +63,26 @@
                                     <li onclick="location.href='../Infor/TermsConditions'">개인정보처리방침</li>
                                 </ul>
                             </li>
-                            <li class="footerLast">© 2020 Enming Games. All Right Reserved.</li>
+                            <li class = "footerLast">© 2020 Enming Games. All Right Reserved.</li>
                         </ul>
                     </div>
                 </div>
             </footer>
+            <div class="theme-button">
+                <button class="theme" onclick="darkMode()" id="button">🌙다크모드</button>
+            </div>
         </div>
+        <script>
+            function darkMode() {
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+                var button = document.getElementById("button");
+                if(button.innerHTML == "🌙다크모드") {
+                    button.innerHTML = "🌞라이트모드";
+                } else {
+                    button.innerHTML = "🌙다크모드";
+                }
+            }
+        </script>
     </body>
 </html>

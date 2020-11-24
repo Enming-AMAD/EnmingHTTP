@@ -80,7 +80,14 @@ body{
     transition: 0.1s;
 }
 
-.tabButton4{
+.tabButton4:hover{
+    margin-top: -2px;
+    height: 40px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.1s;
+}
+
+.tabButton5{
     font-family: 'Nanum Gothic', sans-serif;
     margin-right: 24px;
     float: right;
@@ -88,7 +95,7 @@ body{
     transition: 0.1s;
 }    
 
-.tabButton4:hover{
+.tabButton5:hover{
     margin-top: -2px;
     height: 40px;
     text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
