@@ -16,54 +16,46 @@
         }
         .button{
             margin-top: 1em;
-            display: flex;
-            margin-left: calc(50vw - 430px);
+            margin-left: 50%;
+            width: 1000px;
+            transform: translate(-50%,0%);
         }
-        .subetext{
+        .button button{
+            font-family: 'Nanum Gothic', sans-serif;
+            display: flex;
             text-align: center;
-            font-size: 3rem;
+            font-size: 2em;
             margin-top: 0.3em;
-            margin-left: 2ex;
-        }
-        .unity{
-            display: flex;
-            width: 400px;
-            border: 1px solid rgb(37, 37, 37);
-            color: rgb(37, 37, 37);
-            background-color:white;
-            border-radius: 10px;
+            transform: translate(-50%,0%);
+            margin-left: 50%;
+            width: 500px;
+            border: 1px solid black;
+            color: black;
+            border-radius: 30px;
             transition: 0.3s;
-        }
-        .unity:hover{
-            border-color:white;
-            color: white;
-            background-color: rgb(37, 37, 37);
-            transition: 0.3s;
-        }
-        .unity:focus{
-            outline: none;
-        }
-        .entry{
-            display: flex;
-            width: 400px;
-            margin-left: 5%;
-            border: 1px solid rgb(37, 37, 37);
-            color: rgb(37, 37, 37);
             background-color: white;
-            border-radius: 10px;
-            transition: 0.3s;
         }
-        .entry:hover{
-            border-color:white;
+        .button button:hover{
+            width: 700px;
+            background-color: rgb(37,37,37);
+            border: 1px solid rgb(255, 255, 255);
             color: white;
-            background-color: rgb(37, 37, 37);
             transition: 0.3s;
+            cursor: pointer;
         }
-        .entry:focus{
-            outline: none;
+        .buttontext{
+            margin-top: 30px;
+            margin-left: 10px;
         }
-        .body {
-            height: 28rem;
+        .button button div img{
+            margin-left: 5%;
+            width: 3cm;
+        }
+        .bu{
+            display: flex;
+            width: 100%;
+            margin-left: 38%;
+            transform: translate(-50%, 0%);
         }
     </style>
     <body>
@@ -93,16 +85,28 @@
                     구경할 작품의 종류를 선택해주세요!
                 </div>
                 <div class="button">
-                    <button class="unity" onclick="location.href='../project/unity'">
-                        <img src="../media/project/3-1-u.png" width="100px">
-                        <div class="subetext">
-                            유니티
+                    <button class="unity">
+                        <div class="bu">
+                            <img src="../media/project/3-1-u.svg" width="100px">
+                            <div class="buttontext">
+                                유니티
+                            </div>
                         </div>
                     </button>
-                    <button class="entry" onclick="location.href='../project/entry'">
-                        <img src="../media/project/3-1-e.png" width="80px">
-                        <div class="subetext">
-                            엔트리
+                    <button class="entry">
+                        <div class="bu">
+                            <img src="../media/project/3-1-e.svg" width="100px">
+                            <div class="buttontext">
+                                엔트리
+                            </div>
+                        </div>
+                    </button>
+                    <button class="discordbot">
+                        <div class="bu">
+                            <img src="../media/project/3-1-b.svg" width="100px">
+                            <div class="buttontext">
+                                디스코드 봇
+                            </div>
                         </div>
                     </button>
                 </div>
@@ -111,8 +115,8 @@
                     <input type="checkbox" id="pqy">
                     <label for="pqy"></label>
                     <div class="pqy-content">
-                        <div class="T">크리스마스 이벤트 안내</div>
-                        <div class="T2">크리스마스를 맞아서 이벤트를 진행합니다!<br>우선 엔밍멤버를 모집합니다.<br>
+                        <div class="E">크리스마스 이벤트 안내</div>
+                        <div class="E2">크리스마스를 맞아서 이벤트를 진행합니다!<br>우선 엔밍멤버를 모집합니다.<br>
                             그리고 면접권 100% 할인 (200000원 → 0원) 들어갑니다!<br>
                             현재 신청할수 있는 역할은 엔밍 봇 메이커, 엔밍 게임즈, 엔튜브 편집가, 엔튜브 관리자,<br>작곡가, 아티스트, 도트 그림러, pc그림러 입니다!<br>
                             신청이나 문의는 Enming_Lyuny#9999 로 개인메세지 주세요.</div>

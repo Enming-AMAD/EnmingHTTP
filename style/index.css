@@ -60,32 +60,8 @@ body{
     font-size: 27px;
 }
 
-.tabButton1:hover{
-    margin-top: -2px;
-    height: 40px;
-    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.1s;
-}
-
-.tabButton2:hover{
-    margin-top: -2px;
-    height: 40px;
-    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.1s;
-}
-
-.tabButton3:hover{
-    margin-top: -2px;
-    height: 40px;
-    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.1s;
-}
-
-.tabButton4:hover{
-    margin-top: -2px;
-    height: 40px;
-    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.1s;
+.nav ul li + nav ul label:hover{
+    cursor: pointer;
 }
 
 .tabButton5{
@@ -97,10 +73,7 @@ body{
 }    
 
 .tabButton5:hover{
-    margin-top: -2px;
-    height: 40px;
-    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.1s;
+    cursor: pointer;
 }
 
 .nav li {
@@ -142,6 +115,7 @@ footer {
     margin-top: 10px;
     margin-right: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 .footerLast {
     font-family: 'Nanum Gothic', sans-serif;
@@ -188,6 +162,8 @@ footer {
     padding: 20px;
     text-align: center;
     transition: 0.3s;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .team input + label + div label:hover {
@@ -207,6 +183,8 @@ footer {
     padding: 20px;
     text-align: center;
     transition: 0.3s;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .team input + label + div label + div label:hover {
@@ -238,6 +216,7 @@ footer {
     border-radius: 50px;
     background-color: white;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 .theme:focus{
@@ -308,7 +287,7 @@ footer {
     transition: 0.3s;
 }
 
-.T{
+.E{
     width: 1000px;
     position: fixed;
     bottom: 400px;
@@ -318,7 +297,7 @@ footer {
     text-align: center;
     color: black;
 }
-.T2{
+.E2{
     width: 1000px;
     position: fixed;
     bottom: 150px;
@@ -330,4 +309,5 @@ footer {
 }
 .pqy-close{
     border-radius: 20px;
+    cursor: pointer;
 }
